@@ -10,4 +10,5 @@ It turns out the `.tsconfig` file needs are very different, and EVEN THEN every 
 
 * https://github.com/joshforisha/open-simplex-noise-js
 * https://medium.com/@salathielgenese/setup-typescript-for-modern-browser-a75d699673f6
+* Interesting further reading: https://kernhanda.github.io/tutorial-typescript-canvas-drawing/
 
