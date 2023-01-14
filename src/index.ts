@@ -1,9 +1,6 @@
-import { data } from './data';
 import { makeNoise2D } from './data' 
 import { makeNoise3D } from './data'
 import { makeNoise4D } from './data'
-
-//alert( data.message );
 
 const [width, height] = [888, 222];
 

@@ -1,8 +1,7 @@
-//NOTE: EVERYTIME tsc have to update the imports. 
-import { makeNoise2D } from './data.js';
-import { makeNoise3D } from './data.js';
-import { makeNoise4D } from './data.js';
-//alert( data.message );
+//NOTE: EVERY TIME after tsc have to update the imports. 
+import { makeNoise2D } from './main.js';
+import { makeNoise3D } from './main.js';
+import { makeNoise4D } from './main.js';
 const [width, height] = [888, 222];
 //-----------------------------------------  2D Example
 const canvas = document.querySelector("#canvas2DN");
