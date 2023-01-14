@@ -1,6 +1,6 @@
-import { makeNoise2D } from './data' 
-import { makeNoise3D } from './data'
-import { makeNoise4D } from './data'
+import { makeNoise2D } from './main' 
+import { makeNoise3D } from './main'
+import { makeNoise4D } from './main'
 
 const [width, height] = [888, 222];
 
