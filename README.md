@@ -1,8 +1,10 @@
 # open-simplex-noise-for-browser
 
-If you are making a node.js project using TypeScript the library is https://github.com/joshforisha/open-simplex-noise-js
+If you are making a node.js project using TypeScript the original library is https://github.com/joshforisha/open-simplex-noise-js
 
 This repo exists because I was trying to combine this library with p5js while maintaining the TypeScript.
+
+It turns out the `.tsconfig` file needs are very different, and EVEN THEN every time one compiles you have to go, by hand, and update the imports to point to the `.js` file. 
  
 ## Resources
 
