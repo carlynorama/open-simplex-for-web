@@ -1,5 +1,7 @@
+//NOTE: EVERYTIME tsc have to update the imports. 
 import { makeNoise2D } from './data.js';
 import { makeNoise3D } from './data.js';
+import { makeNoise4D } from './data.js';
 //alert( data.message );
 const [width, height] = [888, 222];
 //-----------------------------------------  2D Example
@@ -37,3 +39,25 @@ for (let x = 0; x < width; x++) {
     }
 }
 ctx3DN.putImageData(imageData3DN, 0, 0);
+//-----------------------------------------  4D Example
+const canvas4DN = document.querySelector("#canvas4DN");
+const ctx4DN = canvas4DN.getContext("2d");
+const imageData4DN = ctx4DN.createImageData(width, height);
+const noise4D = makeNoise4D(Date.now()); // Using current date as seed
+let z4 = 0;
+let z4_inc = 0.01;
+let w = 0;
+let w_inc = 0.06;
+for (let x = 0; x < width; x++) {
+    for (let y = 0; y < height; y++) {
+        z4 += z4_inc;
+        w += w_inc;
+        const i = (x + y * width) * 4;
+        const value = (noise4D(x, y, z4, w) + 1) * 128;
+        imageData4DN.data[i] = value;
+        imageData4DN.data[i + 1] = value;
+        imageData4DN.data[i + 2] = value;
+        imageData4DN.data[i + 3] = 255;
+    }
+}
+ctx4DN.putImageData(imageData4DN, 0, 0);
