@@ -1,4 +1,4 @@
-# open-simplex-noise-for-browser
+# open-simplex-noise-for-web-js
 
 If you are making a node.js project using TypeScript the original library is https://github.com/joshforisha/open-simplex-noise-js
 
