@@ -5,6 +5,8 @@ If you are making a node.js project using TypeScript the original library is htt
 This repo exists because I was trying to combine this library with p5js while maintaining the TypeScript.
 
 It turns out the `.tsconfig` file needs are very different, and EVEN THEN every time one compiles you have to go, by hand, and update the imports to point to the `.js` file. 
+
+See also https://github.com/carlynorama/2023January-30DaysNatureOfCode/blob/main/moving-to-typescript.md
  
 ## Resources
 
